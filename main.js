@@ -8,7 +8,7 @@ var questions = [
     correctAnswwer : false
   },
   {
-    text : "CS is a stylistic language?" ,
+    text : "CSS is a stylistic language?" ,
     correctAnswwer : true
   }
 ];
@@ -17,7 +17,7 @@ var questionIndex = 0;
 var userScore = 0;
 
 function askQuestion() {
-  var userAnswwer = confirm(questions[questionIndex].text + "n\Ok = Da   Cansel = Ne");
+  var userAnswwer = confirm(questions[questionIndex].text + "n\ Ok = Da   Cancel = Ne");
   if (questions[questionIndex].correctAnswwer === userAnswwer) {
     userScore++;
   }
